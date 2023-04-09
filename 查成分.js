@@ -16,12 +16,12 @@ import lodash from 'lodash'
 import common from '../../lib/common/common.js'
 
 //在这里填写你的b站cookie↓↓↓↓↓
-var cookie = "SESSDATA=32fb9352%2C1688696213%2C56015%2A12;"
+var cookie = "SESSDATA=430115ae%2C1695374931%2C311ca%2A32;"
 //在这里填写你的b站cookie↑↑↑↑↑
 //在这里填写你的自动刷新列表设置↓↓↓↓↓
 let rule =`0 0 0 * * ?`  //更新的秒，分，时，日，月，星期几；日月/星期几为互斥条件，必须有一组为*
 let auto_refresh = 1  //是否自动更新列表，1开0关
-let masterId = cfg.masterQQ[0]  //管理者QQ账号
+let masterId = cfg.masterQQ[2456110876]  //管理者QQ账号
 
 let refresh = schedule.scheduleJob(rule, async (e) => {  //定时更新
     if(auto_refresh==1){
